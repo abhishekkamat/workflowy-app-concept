@@ -3,7 +3,7 @@ function myFunction(){
     b=b+1
     a=document.createElement("div");
     c=document.createElement("li");
-    c.innerHTML="Click here";
+    c.innerHTML="New Node";
     document.getElementById("mydiv").innerHTML="";
     a.id="name"+b;
     a.innerHTML="<h1>This is Javascript</h1>"
