@@ -6,7 +6,7 @@ function myFunction(){
     c.innerHTML="New Node";
     document.getElementById("mydiv").innerHTML="";
     a.id="name"+b;
-    a.innerHTML="<h1>This is Javascript</h1>"
+    a.innerHTML="<h1>Node Name</h1>"
 
     document.getElementById("mydiv").appendChild(a);
     document.getElementById("name"+b).appendChild(c);
