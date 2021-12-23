@@ -1,21 +1,19 @@
  b=0;
-function myFunction(){
+function myFunction(node){
+    var newNode=document.createElement("div");
+    console.log(node.parentNode);
+    let h1=document.createElement("h1");
+    h1.innerHTML="Created Node";
+    let b1=document.createElement("button");
+    b1.innerHTML="Add Node";
+    b1.setAttribute("onclick","myFunction(this)");
+    newNode.appendChild(h1);
+    newNode.appendChild(b1);
+    newNode.setAttribute("id","node"+b);
+    node.parentNode.appendChild(newNode);
     b=b+1;
-    a=document.createElement("div");
-    document.getElementById("mydiv").innerHTML="";
-    a.id="name"+b;
-    a.innerHTML=`<h1>Node Name</h1>
-                 <button onclick="myFunction1()">New Node</button>`
-
-    document.getElementById("mydiv").appendChild(a);
+    
 }
 
-function myFunction1(){
-    b=b+1;
-    a=document.createElement("div");
-    a.id="name"+b;
-    a.innerHTML=`<h1>Node Name</h1>
-                 <button onclick="myFunction1()">New Node</button>`
-    document.getElementById("name1").appendChild(a);
 
-}
+
