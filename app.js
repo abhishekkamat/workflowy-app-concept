@@ -11,8 +11,7 @@ function myFunction(node){
     newNode.appendChild(b1);
     newNode.setAttribute("id","node"+b);
     node.parentNode.appendChild(newNode);
-    b=b+1;
-    
+    b=b+1; 
 }
 
 
